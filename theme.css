@@ -1,12 +1,11 @@
 body {
 	/* Vars */
 	--bg:                     #202020;
-	--bg-code:                #272727;
-	--fg:                     #CFD2D5;
+	--bg-code:                #252525;
+	--fg:                     #C0C0C0;
 	--faint:                  #8A8A8A;
 	--red:                    #ff5b56;
 	--green:                  #8EA765;
-	--blue:                   #fff;
 	--orange:                 #CC7832;
 	--yellow:                 #FFC66D;
 	--purple:                 #a782bb;
@@ -34,15 +33,14 @@ body {
   	--code-size:  			  var(--font-smaller);
   	--code-background:        var(--bg-code); /* make slightly lighter than bg */
   	/* need to match darcula solid on these */
-  	--code-normal:            var(--yellow);
+  	--code-normal:            var(--fg);
 	--code-comment:           var(--faint);
-	--code-function:          var(--fg);
+	--code-function:          var(--yellow);
 	--code-important:         var(--orange);
 	--code-keyword:           var(--orange);
 	--code-operator:          var(--fg);
 	--code-property:          var(--purple);
 	--code-punctuation:       var(--fg);
-	--code-string:            var(--green);
 	--code-string:            var(--green);
 	--code-tag:               var(--red);
 	--code-value:             var(--purple);
