@@ -1,61 +1,76 @@
 body {
 	/* Vars */
-	--bg:                          #202020;
-	--bg-code:                     #252525;
-	--fg:                          #C0C0C0;
-	--faint:                       #8A8A8A;
-	--red:                         #ff5b56;
-	--green:                       #8EA765;
-	--orange:                      #CC7832;
-	--yellow:                      #FFC66D;
-	--purple:                      #A782BB;
-	--pref-font:                   'Source Code Pro';
-	--pref-font-size1:             10px;
-	--pref-font-size2:             12px;
-	--pref-font-size3:             16px;
-	--pref-font-size4:             20px;
+	--bg:                             #202020;
+	--bg-code:                        #252525;
+	--fg:                             #C0C0C0;
+	--faint:                          #8A8A8A;
+	--red:                            #FF5B56;
+	--green:                          #8EA765;
+	--orange:                         #CC7832;
+	--yellow:                         #FFC66D;
+	--purple:                         #A782BB;
+	--blue:                           #458588;
+	--pref-font:                      'Source Code Pro';
+	--pref-font-size1:                10px;
+	--pref-font-size2:                12px;
+	--pref-font-size3:                16px;
+	--pref-font-size4:                20px;
 
 	/* Obsidian Properties */
-	--file-line-width:             85%;
-	--text-normal:                 var(--fg);
-    --text-faint:                  var(--faint);
-    --text-accent:                 var(--green); /* links and... */
-    --text-accent-hover:           var(--green); /* links and... */
-	--font-default:                var(--pref-font), monospace;
-	--font-smallest:               var(--pref-font-size1);
-	--font-smaller:                var(--pref-font-size2);
-	--font-small:                  var(--pref-font-size3);
-  	--font-ui-smaller:             var(--pref-font-size1);
-  	--font-ui-small:               var(--pref-font-size2);
-  	--font-ui-medium:              var(--pref-font-size3);
-  	--font-ui-large:               var(--pref-font-size4);
-  	--code-comment:                var(--faint);
-  	--code-white-space:            pre-wrap;
-  	--code-size:  			       var(--font-smaller);
-  	--code-background:             var(--bg-code); /* make slightly lighter than bg */
-  	/* need to match darcula solid on these */
-  	--code-normal:                 var(--fg);
-	--code-comment:                var(--faint);
-	--code-function:               var(--yellow);
-	--code-important:              var(--orange);
-	--code-keyword:                var(--orange);
-	--code-operator:               var(--fg);
-	--code-property:               var(--purple);
-	--code-punctuation:            var(--fg);
-	--code-string:                 var(--green);
-	--code-tag:                    var(--red);
-	--code-value:                  var(--purple);
-	--callout-title-color:         var(--fg);
+	--vault-name-color:               var(--orange);
+	--vault-name-font-weight:         bold;
+	--file-line-width:                85%;
+	--text-normal:                    var(--fg);
+    --text-faint:                     var(--faint);
+    --text-accent:                    var(--green); /* links and... */
+    --text-accent-hover:              var(--yellow); /* links and... */
+    --interactive-accent:             var(--green);
+    --interactive-accent-hover:       var(--yellow);
+    --text-on-accent:                 var(--bg);
+    --font-default:                   var(--pref-font), monospace;
+    --font-monospace-default:         var(--pref-font), monospace;
+    --font-interface:                 var(--pref-font), monospace;
+    --font-text:                      var(--pref-font), monospace;
+    --font-print:                     var(--pref-font), monospace;
+    --font-monospace:                 var(--pref-font), monospace;
+    --font-mermaid:                   var(--pref-font), monospace;
+	--font-default:                   var(--pref-font), monospace;
+	--font-monospace:                 var(--pref-font), monospace;
+	--font-smallest:                  var(--pref-font-size1);
+	--font-smaller:                   var(--pref-font-size2);
+	--font-small:                     var(--pref-font-size3);
+  	--font-ui-smaller:                var(--pref-font-size1);
+  	--font-ui-small:                  var(--pref-font-size2);
+  	--font-ui-medium:                 var(--pref-font-size3);
+  	--font-ui-large:                  var(--pref-font-size4);
+  	--font-text-size:                 var(--pref-font-size2);
+  	--link-decoration:                none;
+  	--link-decoration-hover:          none;
+  	--link-external-decoration:       none;
+  	--link-external-decoration-hover: none;
+  	--code-comment:                   var(--faint);
+  	--code-white-space:               pre-wrap;
+  	--code-size:  			          var(--font-smaller);
+  	--code-background:                var(--bg-code);
+  	--code-normal:                    var(--fg);
+	--code-comment:                   var(--faint);
+	--code-function:                  var(--yellow);
+	--code-important:                 var(--red);
+	--code-keyword:                   var(--orange);
+	--code-operator:                  var(--fg);
+	--code-property:                  var(--purple);
+	--code-punctuation:               var(--fg);
+	--code-string:                    var(--green);
+	--code-tag:                       var(--yellow);
+	--code-value:                     var(--blue);
+	--callout-title-color:            var(--fg);
+	--list-spacing:                   .1em;
 }
 
 .theme-dark {
-	--background-primary:          var(--bg);
-    --background-secondary:        var(--bg);
-    --titlebar-background:         var(--bg);
-    --titlebar-background-focused: var(--bg);
+	--background-primary:             var(--bg);
+    --background-secondary:           var(--bg);
+    --titlebar-background:            var(--bg);
+    --titlebar-background-focused:    var(--bg);
 }
 
-.theme-light {
-	--background-primary:          #ECE4FF;
-  	--background-secondary:        #D9C9FF;
-}
