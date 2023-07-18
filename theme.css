@@ -20,7 +20,7 @@ body {
 	/* Obsidian Properties */
 	--vault-name-color:               var(--orange);
 	--vault-name-font-weight:         bold;
-	--file-line-width:                85%;
+	--file-line-width:                80%;
 	--text-normal:                    var(--fg);
     --text-faint:                     var(--faint);
     --text-accent:                    var(--green); /* links and... */
@@ -68,13 +68,6 @@ body {
 	--list-spacing:                   .1em;
 }
 
-.cm-s-obsidian span.cm-inline-code {
-    color:                            var(--purple);
-    background-color:                 var(--bg-code-inline);
-    padding:                          0 4px;
-    border-radius:                    4px;
-}
-
 .theme-dark {
 	--background-primary:             var(--bg);
     --background-secondary:           var(--bg);
@@ -82,3 +75,21 @@ body {
     --titlebar-background-focused:    var(--bg);
 }
 
+/* Set inline-code attributes */
+.cm-s-obsidian span.cm-inline-code, .markdown-preview-view code {
+    color:                            var(--purple);
+    background-color:                 var(--bg-code-inline);
+    padding:                          0 4px;
+    border-radius:                    4px;
+}
+
+/* Reset the color in read mode on code blocks */
+.markdown-preview-view pre code {
+	color:                            var(--fg);
+}
+
+/* Match page width for edit & read modes */
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
+	max-width: 100%;
+}
