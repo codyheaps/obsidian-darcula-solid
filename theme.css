@@ -65,7 +65,7 @@ body {
 	--code-tag:                       var(--yellow);
 	--code-value:                     var(--blue);
 	--callout-title-color:            var(--fg);
-	--list-spacing:                   .1em;
+	--list-spacing:                   .2em;
 }
 
 .theme-dark {
